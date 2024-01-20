@@ -46,6 +46,7 @@ const Footer = () => {
               <li>+91 8855974714 / 9284516302</li>
               <li>syash8811@gmail.com</li>
             </ul>
+      <h3 className='cr'>Made With ❤️ by <a href="https://www.linkedin.com/in/yash-sharma-aa249b206/" target='#blank_'>Yash Sharma</a></h3>
          </div>
       </div>
     </>

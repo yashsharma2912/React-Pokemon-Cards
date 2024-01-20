@@ -16,7 +16,7 @@ const Navbar = () => {
            </ul>
         </div>
         <div className="resume">
-           <h3>Resume/CV <span><a href="#"></a></span></h3>
+           <h3>Resume/CV <span> <button className='download'>Download</button></span></h3>
         </div>
      </div>
      </>

@@ -25,7 +25,7 @@
 }
 .left{
     position: relative;
-    top: 3.79rem;
+    top: 3.8rem;
     
 }
 .middle{
@@ -37,7 +37,7 @@
 .right{
     position: relative;
     left: 5rem;
-    top: 0.45rem;
+    top: 2.2rem;
 }
 .link-items{
     position: relative;
@@ -48,4 +48,8 @@
     position: relative;
     right: 3.8rem;
     line-height: 2.8rem;
+}
+.cr{
+    position: relative;
+    top: 4.3rem;
 }
