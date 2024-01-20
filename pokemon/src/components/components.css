@@ -1,23 +1,44 @@
 body{
     margin: 0;
+    overflow-x: hidden;
+}
+:root{
+    --secondary:rgb(65, 65, 162);
 }
 .baner{
     display: flex;
     justify-content:center;
-    background-color: rgb(37, 72, 72);
-   
+    border-bottom: 2px solid var(--border);
 }
-
+.banerImg{
+    position: relative;
+    top: 0.5rem;
+    left: 3rem;
+}
 .left-baner p{
     width: 70%;
     text-align: left;
     font-size: 22px;
     position: relative;
-    left: 5rem;
+    left: 10rem;
 }
 .left-baner h1{
     width: 70%;
     position: relative;
-    left: 5rem;
-    font-size: 55px;
+    left: 10rem;
+    font-size: 60px;
+}
+.right-baner{
+    position: relative;
+    right: 2rem;
+}
+.circle{
+    width: 550px;
+    height: 550px;
+    background-color: var(--secondary);
+    border-radius: 50%;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    border: 2px solid ;
 }

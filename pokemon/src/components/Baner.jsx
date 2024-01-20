@@ -6,7 +6,7 @@ const Baner = () => {
     <>
      <div className="baner flex">
          <div className="left-baner">
-            <h1>I am a Web Developer</h1>
+            <h1>I Am a Web Developer</h1>
             <p>
             Committed to a recent BBA graduate 
             specializing in computer applications, poised to embark on 
@@ -17,6 +17,8 @@ const Baner = () => {
             </p>
          </div>
          <div className="right-baner">
+
+            <div className="circle"></div>        
             <img className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
          </div>
      </div>
