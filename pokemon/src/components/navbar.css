@@ -26,10 +26,10 @@ ul{
     list-style: none;
     gap: 2rem;
 }
-a{
+.nav-items a{
     padding: 1rem 1.3rem;
 }
-a:hover {
+.nav-items a:hover {
     box-shadow: inset 200px 0 0 0 rgb(0, 0, 0);
     color: white;
     transition: color 0.1s ease-in-out;
@@ -43,4 +43,10 @@ a:hover {
     width: 7rem;
     height: 2.5rem;
 
+}
+.download:hover{
+    color: var(--text);
+    background-color: white;
+    border: 1px solid var(--text);
+    cursor: pointer;
 }
