@@ -16,7 +16,7 @@ const Navbar = () => {
            </ul>
         </div>
         <div className="resume">
-           <h2>Resume <span><a href="#"></a></span></h2>
+           <h3>Resume/CV <span><a href="#"></a></span></h3>
         </div>
      </div>
      </>

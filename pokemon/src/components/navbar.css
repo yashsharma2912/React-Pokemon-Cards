@@ -1,14 +1,18 @@
+:root{
+    --text : black;
+    --border : red;
 
+}
 body{
     font-family: "Poppins", sans-serif;
 }
 
 .navbar{
-   border-bottom: 3px solid red;
+   border-bottom: 3px solid var(--border);
 }
 a{
     text-decoration: none;
-    color: black;
+    color: var(--primary);
     font-weight: 600;
     font-size: 20px;
 }
@@ -22,9 +26,11 @@ ul{
     list-style: none;
     gap: 2rem;
 }
-li{
+a{
     padding: 1rem 1.3rem;
 }
-li:hover {
-    background-color: rgb(170, 238, 33);
+a:hover {
+    box-shadow: inset 200px 0 0 0 rgb(0, 0, 0);
+    color: white;
+    transition: color 0.1s ease-in-out;
 }

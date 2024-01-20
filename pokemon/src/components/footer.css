@@ -1,0 +1,51 @@
+:root{
+    --text : black;
+    --border : red;
+}
+.footer{
+    position: relative;
+    top: 20rem;
+    border-top: 2px solid var(--border);
+    height: 200px;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+.aboutText{
+  max-width: 800px;
+}
+.footer{
+    justify-content: flex-start;
+}
+.footer .left{
+    width: 25%;
+    position: relative;
+    left: 5rem;
+}
+.left{
+    position: relative;
+    top: 3.79rem;
+    
+}
+.middle{
+    position: relative;
+    left: 5rem;
+    top: 3.25rem;
+    width: 40%;
+   }
+.right{
+    position: relative;
+    left: 5rem;
+    top: 0.45rem;
+}
+.link-items{
+    position: relative;
+    right: 3.8rem;
+    line-height: 2.8rem;
+}
+.service-items{
+    position: relative;
+    right: 3.8rem;
+    line-height: 2.8rem;
+}
