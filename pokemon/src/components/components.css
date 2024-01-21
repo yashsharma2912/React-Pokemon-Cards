@@ -1,6 +1,10 @@
+
+
 body{
-    margin: 0;
-    overflow-x: hidden;
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+   
 }
 :root{
     --secondary:rgb(62, 62, 149);
@@ -8,25 +12,39 @@ body{
 }
 /* banner section starts */ 
 .baner{
+    width: 100%;
     display: flex;
     justify-content:center;
-    border-bottom: 2px solid var(--border);
+
     background-color: var(--accent);
 }
 .banerImg{
     position: relative;
     top: 0.5rem;
     left: 3rem;
+
+  
+}
+@keyframes floating {
+    0%{
+        transform: translate(0,0px);
+    } 50%{
+        transform: translate(0,10px);
+    }100%{
+        transform: translate(0,-0px);
+    }
+    
 }
 .left-baner p{
     width: 70%;
     text-align: left;
     font-size: 22px;
     position: relative;
+    bottom: 2rem;
     left: 10rem;
 }
 .left-baner h1{
-    width: 70%;
+    width: 100%;
     position: relative;
     left: 10rem;
     font-size: 60px;
@@ -43,7 +61,54 @@ body{
     position: absolute;
     top: 1rem;
     left: 1rem;
-    border: 2px solid var(--accent) ;
+    border: 2px solid var(--border) ;
+
+   
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
+.wp-btn{
+    background-color: rgb(122, 183, 31);
+    color: white;
+    width: 15rem;
+    height: 3rem;
+    border: none;
+    border-radius: 2px;
+    position: relative;
+    left: 10rem;
+    bottom: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+.wp-btn:hover{
+    background-color: var(--accent);
+    color:  rgb(122, 183, 31);
+    border: 1px solid  rgb(122, 183, 31);
+}
+/* for medium device */ 
+ 
+/* for small device */ 
+
 
 /*  banner section ends */ 
+
+/* Skiils section starts */ 
+.sectionHeading{
+    text-align: center;
+    margin: 0 auto;
+    max-width: 90px;
+    margin-top: 2rem;
+    background-color: var(--secondary);
+    color: white;
+    padding: 0.5rem 2rem;
+}
+.skillBox{
+    width: 13%;
+    height: 25vh;
+    background-color: rgb(20, 39, 45);
+}
+.reactIcon{
+    color: aqua;
+    font-size: 115px;
+}
+/* Skiils section Ends */ 

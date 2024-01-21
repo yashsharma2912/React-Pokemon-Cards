@@ -14,13 +14,17 @@ const Baner = () => {
             Recent academic achievements include 
             bringing fresh perspectives and a solid
             foundation in computer science to innovative projects.
-            </p>
+            </p> 
+            <div className="whatsapp">
+           <button className='wp-btn'>Let's Chat on Whatsapp</button>
+         </div>
          </div>
          <div className="right-baner">
 
             <div className="circle"></div>        
             <img className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
          </div>
+         
      </div>
     </>
   )

@@ -1,3 +1,5 @@
-feComposite{
-    background-color: aqua;
+@import url(../src/utils/mediaQuery.css);
+.container{
+    overflow-x: hidden;
+
 }

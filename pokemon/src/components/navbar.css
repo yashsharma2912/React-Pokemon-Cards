@@ -1,7 +1,7 @@
 :root{
     --text : black;
     --border : red;
-    --ternary : rgb(168, 228, 138);
+    --ternary : rgb(213, 255, 136);
 
 }
 body{
@@ -9,10 +9,11 @@ body{
 }
 
 .navbar{
+   width: 100%;
    border-bottom: 3px solid var(--border);
    position: sticky;
    top: 0;
-   height: 13vh;
+   height: 11vh;
    z-index: 5;
    background-color: var(--ternary);
 }
@@ -34,6 +35,8 @@ ul{
 }
 .nav-items a{
     padding: 1rem 1.3rem;
+    position: relative;
+    right: 2rem;
 }
 .nav-items a:hover {
     box-shadow: inset 200px 0 0 0 rgb(0, 0, 0);
