@@ -5,7 +5,8 @@ const Navbar = () => {
   return (
      <>
      <div className="navbar flex">
-        <h1>Yash <br/> Sharma</h1>
+        <h1>Yash <br/> Sharma <span> </span></h1>
+        
         <div className="navItems">
            <ul className=''>
             <li className='list'><h4 className='navEle'><a href="#">Projects</a></h4></li>

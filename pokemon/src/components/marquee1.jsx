@@ -9,7 +9,7 @@ const Marquee = () => {
              <div className="dot"></div>
              <h1>Web Page Designing</h1>
              <div className="dot"></div>
-             <h1>Programming</h1>
+             <h1>1 : 1 Teaching</h1>
              <div className="dot"></div>
              <h1>Graphic Designing</h1>
              <div className="dot"></div>
@@ -19,7 +19,7 @@ const Marquee = () => {
              <div className="dot"></div>
              <h1>Web Page Designing</h1>
              <div className="dot"></div>
-             <h1>Programming</h1>
+             <h1>1 : 1 Teaching</h1>
              <div className="dot"></div>
              <h1>Graphic Designing</h1>
              <div className="dot"></div>
@@ -29,7 +29,7 @@ const Marquee = () => {
              <div className="dot"></div>
              <h1>Web Page Designing</h1>
              <div className="dot"></div>
-             <h1>Programming</h1>
+             <h1>1 : 1 Teaching</h1>
              <div className="dot"></div>
              <h1>Graphic Designing</h1>
              <div className="dot"></div>

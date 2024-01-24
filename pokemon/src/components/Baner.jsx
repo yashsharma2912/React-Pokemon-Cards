@@ -25,8 +25,9 @@ const Baner = () => {
             <div className="circle2"></div>        
             <img className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
          </div>
-         
      </div>
+         <div className="overlay">
+         </div>
     </>
   )
 }

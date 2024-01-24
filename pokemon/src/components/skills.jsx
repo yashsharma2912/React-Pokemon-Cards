@@ -2,16 +2,17 @@ import React from 'react'
 import '../components/style.css'
 import { FaReact } from "react-icons/fa";
 
-const Skills = () => {
+const Skills = (props) => {
   return (
-    <div>
-       <div id='skills'>
-            <h1 className='sectionHeading'> Skills</h1>
-       </div>
+    <div className='skills'>
+       
        <div className="skillBox">
-         <FaReact className='reactIcon' />
-         <p>React js</p>
-       </div>
+          <div className='skill'>
+            <div className="over"></div>
+             <h2>{props.skillName}</h2>
+              <h3>{props.skillLevel}</h3>
+            </div>
+          </div>
     </div>
   )
 }
