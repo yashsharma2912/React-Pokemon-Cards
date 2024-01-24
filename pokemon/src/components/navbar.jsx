@@ -1,22 +1,23 @@
 import React from 'react'
-import  "../components/navbar.css"
+import  "../components/style.css"
 
 const Navbar = () => {
   return (
      <>
      <div className="navbar flex">
         <h1>Yash Sharma</h1>
-        <div className="nav-items">
+        <div className="navItems">
            <ul className='flex'>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#">Education</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><h4><a href="#">Home</a></h4></li>
+            <li><h4><a href="#">Projects</a></h4></li>
+            <li><h4><a href="#skills">Skills</a></h4></li>
+            <li><h4><a href="#">Education</a></h4></li>
+            <li><h4><a href="#">Contact</a></h4></li>
+           
            </ul>
         </div>
         <div className="resume">
-           <h3>Resume/CV <span> <button className='download'>Download</button></span></h3>
+           <h4><a href="#">Resume</a></h4>
         </div>
      </div>
      </>
