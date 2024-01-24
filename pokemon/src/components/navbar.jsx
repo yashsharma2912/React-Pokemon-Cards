@@ -5,14 +5,13 @@ const Navbar = () => {
   return (
      <>
      <div className="navbar flex">
-        <h1>Yash Sharma</h1>
+        <h1>Yash <br/> Sharma</h1>
         <div className="navItems">
-           <ul className='flex'>
-            <li><h4><a href="#">Home</a></h4></li>
-            <li><h4><a href="#">Projects</a></h4></li>
-            <li><h4><a href="#skills">Skills</a></h4></li>
-            <li><h4><a href="#">Education</a></h4></li>
-            <li><h4><a href="#">Contact</a></h4></li>
+           <ul className=''>
+            <li className='list'><h4 className='navEle'><a href="#">Projects</a></h4></li>
+            <li className='list'><h4 className='navEle'><a href="#skills">Skills</a></h4></li>
+            <li className='list'><h4 className='navEle'><a href="#">Education</a></h4></li>
+            <li className='list'><h4 className='navEle'><a href="#">Contact</a></h4></li>
            
            </ul>
         </div>

@@ -1,41 +1,157 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 :root{
     --primary : white;
     --secondary : orangered;
-    --border1 : black;
+    --border1 : rgb(119, 118, 118);
     --font1 : red ;
-    --font2 : grey;
+    --font2 : rgb(0, 0, 0);
 }
+
+/*  Navbar satrted  */ 
 .navbar{
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 5;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2em;
+    padding: 1vw 2vw;
     flex-wrap: wrap;
-    border-bottom: 1px solid var(--border1);
+    background-color: var(--primary);
+    /* border-bottom: 1px solid var(--font2); */
+
 }
 .navbar h1{
+    margin-left: 2vw;
     font-size: 5vmin;
+    line-height: 1.2;
     font-family: "Poppins", sans-serif;
 }
 .navItems ul{
+    position: relative;
     display: flex;
     list-style: none;
-    gap: 3vw;
+    gap: 1.5vw;
     margin-right: 2vw;
 }
 .navItems a{
+    position: relative;
+    z-index: 9;
     text-decoration: none ;
-    color: var(--border1);
+    color: var(--font2);
+    padding: 1vw 2vw;
+    border: 1.5px solid var(--border1) ;
+    border-radius: 25px;
+    font-family: "Poppins", sans-serif;
+}
+
+.navItems a:hover{
+    background-color: var(--font2);
+    color: var(--primary);
+    transition: all ease-in-out 0.3s;
+}
+.resume {
+    text-decoration: none ;
+    margin-right: 2vw;
+    color: var(--font2);
     padding: 1vw 2vw;
     border: 1.5px solid var(--border1) ;
     border-radius: 25px;
     font-family: "Poppins", sans-serif;
 }
 .resume a{
-    text-decoration: none ;
-    color: var(--border1);
-    padding: 1vw 2vw;
-    border: 1.5px solid var(--border1) ;
-    border-radius: 25px;
+    text-decoration: none;
+    color: var(--font2);
+    transition: all ease-in-out 0.3s;
+}
+.resume:hover{
+    background-color: var(--font2);
+    
+}
+.resume:hover a{
+    color: var(--primary);
+}
+
+/* Navbar ends */ 
+
+/* hero section started */
+.baner{
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: space-between;
+    height: 115vh;
+    background-color: rgb(255, 250, 246);
+    border-bottom: 8px solid blanchedalmond;
     font-family: "Poppins", sans-serif;
+}
+.left-baner{
+    margin-bottom: 7rem;
+    margin-left: 6rem;
+}
+.left-baner h1{
+    margin-left: 2vw;
+    font-size: 4vw;
+}
+.left-baner p{
+   width: 40vw;
+   font-size: 1.25vw ;
+   margin-left: 2vw;
+}
+.wp-btn{
+    background-color: transparent;
+    margin-left: 2vw;
+    margin-top: 1.5vh;
+    padding: 1rem 4rem;
+    border-radius: 8px;
+    border: none;
+    color: green;
+    border: 1px solid green;
+}
+.banerImg{
+    position: relative;
+    z-index: 3;
+    width: 550px;
+    top: 0.4rem;
+    filter: blur(0.2px);
+   }
+.circle1{
+    position: absolute;
+    margin-top: 9rem;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(3rem);
+    background-color: var(--secondary);
+    animation-name: anime;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+.circle2{
+    position: absolute;
+    margin-top: 9rem;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    filter: blur(2.5rem);
+    background-color: var(--secondary);
+    animation-name: anime ;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction:alternate ;
+}
+
+@keyframes anime {
+    from{
+        transform: translate(-10%,-10%);
+    } 
+    to{
+        transform: translate(10%,10%);
+    }
 }
