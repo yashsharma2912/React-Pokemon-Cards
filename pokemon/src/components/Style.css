@@ -10,7 +10,15 @@
     --font1 : red ;
     --font2 : rgb(0, 0, 0);
 }
-
+/* Headings  */
+.sectionHead h1{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    font-size: 5vw;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2vw;
+}
 /*  Navbar satrted  */ 
 .navbar{
     display: flex;
@@ -193,7 +201,7 @@
    animation-iteration-count: infinite;
 }
  .mark h1{
-    font-size: 5vw;
+    font-size: 4vw;
     font-family: "Poppins", sans-serif;
     display: inline-block;
  }
@@ -219,6 +227,7 @@
 /* SKills Sections Starts */ 
 .skills{
     /* border: 1px solid red; */
+    
     display: flex;
     flex-direction: column;
     font-family: "Poppins", sans-serif;
@@ -235,6 +244,7 @@
     position: relative;
     padding: 1vw 4vw;
     border-bottom: 1px solid var(--border1);
+    cursor: pointer;
 }
 .over{
   position: absolute;

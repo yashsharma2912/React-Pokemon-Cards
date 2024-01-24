@@ -9,7 +9,7 @@ const Skills = (props) => {
        <div className="skillBox">
           <div className='skill'>
             <div className="over"></div>
-             <h2>{props.skillName}</h2>
+             <h2>{props.skillName} <span></span></h2>
               <h3>{props.skillLevel}</h3>
             </div>
           </div>
