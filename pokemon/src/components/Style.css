@@ -86,7 +86,7 @@
     justify-content: space-between;
     height: 115vh;
     background-color: rgb(255, 250, 246);
-    border-bottom: 8px solid blanchedalmond;
+    /* border-bottom: 8px solid blanchedalmond; */
     font-family: "Poppins", sans-serif;
 }
 .left-baner{
@@ -155,3 +155,45 @@
         transform: translate(10%,10%);
     }
 }
+
+/* Experience marquee section starts*/
+.mark{
+    margin-top: 2vmax;
+    white-space: nowrap;
+    overflow-x: auto;
+    
+}
+.mark::-webkit-scrollbar{
+    display: none;
+}
+.con{
+   white-space: nowrap;
+   display: inline-block;
+   animation-name: moving;
+   animation-duration: 15s;
+   animation-timing-function: linear ;
+   animation-iteration-count: infinite;
+}
+ .mark h1{
+    font-size: 5vw;
+    font-family: "Poppins", sans-serif;
+    display: inline-block;
+ }
+ .dot{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--secondary);
+    display: inline-block;
+    margin: 0 2vw;
+ }
+
+ @keyframes moving {
+    from{
+        transform: translateX(0%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+ }
+/* Experience marquee section ends*/

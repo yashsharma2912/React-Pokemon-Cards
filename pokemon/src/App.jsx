@@ -1,9 +1,10 @@
 import React from 'react'
 import './app.css'
 import Navbar from './components/navbar'; 
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Baner from './components/Baner';
-import Skills from './components/skills';
+import Marquee from './components/marquee1';
+// import Skills from './components/skills';
 
 
 const App = () => {
@@ -12,7 +13,8 @@ const App = () => {
       <div className="container">
       <Navbar />
       <Baner/>
-      <Footer/>
+      {/* <Footer/> */}
+      <Marquee/>
       </div>
     </div>
   )
