@@ -4,10 +4,15 @@ import  "../components/style.css"
 const Navbar = () => {
   return (
      <>
+   
      <div className="navbar flex">
+     <div className="fullscreen">
+            
+            </div>
         <h1>Yash <br/> Sharma <span> </span></h1>
         
         <div className="navItems">
+         
            <ul className=''>
             <li className='list'><h4 className='navEle'><a href="#">Projects</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#skills">Skills</a></h4></li>
@@ -19,6 +24,7 @@ const Navbar = () => {
         <div className="resume">
            <h4><a href="#">Resume</a></h4>
         </div>
+           <h3 className='menu'>Menu</h3>
      </div>
      </>
   )

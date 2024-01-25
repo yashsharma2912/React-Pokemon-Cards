@@ -1,6 +1,6 @@
 import React from 'react'
 import '../components/style.css'
-import { FaReact } from "react-icons/fa";
+
 
 const Skills = (props) => {
   return (

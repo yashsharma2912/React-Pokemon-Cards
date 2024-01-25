@@ -1,11 +1,12 @@
 import React from 'react'
 import './app.css'
+import '../src/utils/mediaQuery.css'
 import Navbar from './components/navbar'; 
 import Baner from './components/Baner';
 import Marquee from './components/marquee1';
 import Skills from './components/skills';
 import SectionHeading from './components/sectionHeading';
-// import Footer from './components/footer';
+import Footer from './components/footer';
 
 
 const App = () => {
@@ -25,7 +26,7 @@ const App = () => {
       <SectionHeading Head="SERVICES"/>
       <Marquee/>
       <SectionHeading Head="CONTACT"/>
-      {/* <Footer/> */}
+      <Footer/>
       </div>
     </div>
   )

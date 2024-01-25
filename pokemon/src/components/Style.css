@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -20,9 +21,16 @@
     margin-top: 2vw;
 }
 /*  Navbar satrted  */ 
+.fullscreen{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.215);
+    position: fixed;
+    top: -100%;
+}
 .navbar{
     display: flex;
-    position: sticky;
+    /* position: sticky; */
     top: 0;
     z-index: 55;
     align-items: center;
@@ -90,7 +98,15 @@
 .resume:hover a{
     color: var(--primary);
 }
-
+.menu{
+    font-size: 3vw;
+    color: var(--font2);
+    padding: 3vw 8vw;
+    border: 1.5px solid var(--border1) ;
+    border-radius: 25px;
+    display: none;
+    font-family: "Poppins", sans-serif;
+}
 /* Navbar ends */ 
 
 /* hero section started */
@@ -99,7 +115,7 @@
     width: 100%;
     align-items: flex-end;
     justify-content: space-between;
-    height: 115vh;
+    height: 100vh;
     background-color: rgb(255, 250, 246);
     /* border-bottom: 8px solid blanchedalmond; */
     font-family: "Poppins", sans-serif;
@@ -130,7 +146,7 @@
 .banerImg{
     position: relative;
     z-index: 3;
-    width: 550px;
+    width: 35vw;
     top: 0.4rem;
     filter: blur(0.2px);
    }
@@ -183,6 +199,7 @@
 }
 
 /* Experience marquee section starts*/
+
 .mark{
     margin-top: 2vmax;
     white-space: nowrap;
@@ -196,7 +213,7 @@
    white-space: nowrap;
    display: inline-block;
    animation-name: moving;
-   animation-duration: 25s;
+   animation-duration: 10s;
    animation-timing-function: linear ;
    animation-iteration-count: infinite;
 }
@@ -224,7 +241,9 @@
  }
 /* Experience marquee section ends*/
 
-/* SKills Sections Starts */ 
+/*----------------------------------------------------------*/ 
+/* SKills Sections Starts */
+/*----------------------------------------------------------*/ 
 .skills{
     /* border: 1px solid red; */
     
@@ -270,3 +289,82 @@
     color: var(--font2);
 }
 /* SKills Sections Ends */ 
+
+/*----------------------------------------
+ Contact section starts 
+ ----------------------------------------*/
+
+
+/*----------------------------------------
+ Contacts section ends
+ ----------------------------------------*/
+
+
+
+/*----------------------------------------
+ Footer section starts 
+ ----------------------------------------*/
+
+
+/*----------------------------------------
+ Footer section ends
+ ----------------------------------------*/
+
+
+ /*----------------------------------------
+ Media Queries starts 
+ ----------------------------------------*/
+  @media (max-width:600px) {
+    .navbar{
+        margin-top: 4vw;
+        width: 100vw;
+    }
+    .navbar h1{
+        margin-left: 5vw;
+        font-size: 5vmin;
+        line-height: 1.2;
+        font-family: "Poppins", sans-serif;
+    }
+    .navItems ul{
+        display: none;
+    }
+    .resume {
+        display: none;
+    }
+    .menu{
+        display: block;
+        margin-right: 2vw;
+    }
+    
+  }
+
+  @media (max-width : 600px) {
+     .baner{
+        flex-direction: column;
+        justify-content: center;
+    
+        height: 95vh;
+     }
+     .left-baner{
+        margin: 0 auto 0 0;
+        position: relative;
+        top: 10vw;
+       
+     }
+     .left-baner h1{
+        font-size: 7vw;
+        text-wrap: nowrap;
+     }
+     .left-baner p{
+        width: 80vw;
+        font-size: 3vw;
+     }
+     .banerImg{
+        position: relative;
+        width: 45vw;
+     }
+  }
+
+/*----------------------------------------
+ Media Queries ends
+ ----------------------------------------*/
