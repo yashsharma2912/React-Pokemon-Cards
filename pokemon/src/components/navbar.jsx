@@ -6,15 +6,12 @@ const Navbar = () => {
      <>
    
      <div className="navbar flex">
-     <div className="fullscreen">
-            
-            </div>
         <h1>Yash <br/> Sharma <span> </span></h1>
         
         <div className="navItems">
          
            <ul className=''>
-            <li className='list'><h4 className='navEle'><a href="#">Projects</a></h4></li>
+            <li className='list'><h4 className='navEle'><a href="#projects">Projects</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#skills">Skills</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#">Education</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#">Contact</a></h4></li>

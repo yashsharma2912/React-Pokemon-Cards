@@ -121,7 +121,7 @@
     font-family: "Poppins", sans-serif;
 }
 .left-baner{
-    margin-bottom: 7rem;
+    margin-bottom: 8rem;
     margin-left: 6rem;
 }
 .left-baner h1{
@@ -133,15 +133,26 @@
    font-size: 1.25vw ;
    margin-left: 2vw;
 }
-.wp-btn{
-    background-color: transparent;
+.socialicons{
+    display: flex;
+    gap: 1.5vw;
+    margin-top: 1vw;
     margin-left: 2vw;
-    margin-top: 1.5vh;
-    padding: 1rem 4rem;
-    border-radius: 8px;
-    border: none;
-    color: green;
-    border: 1px solid green;
+}
+.socialicons a{
+    text-decoration: none;
+}
+.sc{
+    font-size: 4.5vw;
+}
+.linkedin{
+    color: rgb(62, 62, 255);
+}
+.whatsapp{
+    color: rgb(48, 159, 48);
+}
+.github, .twitter{
+    color: black;
 }
 .banerImg{
     position: relative;
@@ -153,11 +164,11 @@
 .circle1{
     position: absolute;
     margin-top: 9rem;
-    width: 400px;
-    height: 400px;
+    width: 20vw;
+    height: 20vw;
     border-radius: 50%;
     filter: blur(3rem);
-    background-color: var(--primary);
+    background-color: var(--secondary);
     animation-name: anime;
     animation-duration: 3s;
     animation-timing-function: linear;
@@ -197,6 +208,10 @@
     position: relative;
     bottom: 1rem;
 }
+/* Projects Section Starts */ 
+
+
+/* Projects Section ends */ 
 
 /* Experience marquee section starts*/
 
@@ -314,7 +329,7 @@
  /*----------------------------------------
  Media Queries starts 
  ----------------------------------------*/
-  @media (max-width:600px) {
+  @media (max-width:700px) {
     .navbar{
         margin-top: 4vw;
         width: 100vw;
@@ -333,35 +348,48 @@
     }
     .menu{
         display: block;
-        margin-right: 2vw;
+        margin-right: 4vw;
     }
     
   }
 
-  @media (max-width : 600px) {
+  @media (max-width : 700px) {
      .baner{
         flex-direction: column;
         justify-content: center;
     
-        height: 95vh;
+        height: 110vw;
      }
      .left-baner{
-        margin: 0 auto 0 0;
+        margin: 0 auto 0 5vw;
         position: relative;
-        top: 10vw;
+        top: 8vw;
        
      }
      .left-baner h1{
         font-size: 7vw;
         text-wrap: nowrap;
      }
+     .titleTag{
+        color: var(--secondary);
+     }
      .left-baner p{
         width: 80vw;
         font-size: 3vw;
      }
+     .sc{
+        margin-top: 2vw;
+        font-size: 7vw;
+     }
      .banerImg{
         position: relative;
-        width: 45vw;
+        width: 55vw;
+     }
+     .wp-btn{
+        font-size: 2.5vw;
+        padding: 3vw 5vw;
+        text-wrap: nowrap;
+        width: 42vw;
      }
   }
 

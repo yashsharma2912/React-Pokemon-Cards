@@ -1,0 +1,70 @@
+.projectcards{
+    justify-content: center;
+    margin-top: 5vw;
+    display: flex;
+    gap: 3vw;
+}
+.cardimg img{
+    margin-left: 7vw;
+    width: 25vw;
+    height: 15vw;
+    border-radius: 15px;
+}
+.cardinfo{
+    font-family: "Poppins", sans-serif;
+}
+.cardinfo h1{
+    font-size: 2.3vw;
+}
+.cardinfo h2{
+    font-weight: 400;
+   font-size: 1.5vw;
+}
+.cardinfo p{
+   margin-top: 0.5vw;
+    font-size: 1vw;
+    width: 30vw;
+}
+.infolink{
+    margin-top: 0.5vw;
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+.infolink h4,a{
+    text-decoration: none;
+    color: var(--font2);
+    font-size: 1vw;
+}
+.cardinfo span i{
+    margin-left: 1.5vw;
+    font-size: 2vw;
+}
+
+@media (max-width : 700px) {
+    .cardimg img{
+        margin-left: 7vw;
+        width: 25vw;
+        height: 30vw;
+        border-radius: 15px;
+    }
+    .cardinfo{
+      
+    }
+    .cardinfo h1{
+        font-size: 4.3vw;
+    }
+    .cardinfo h2{
+       font-weight: 400;
+       font-size: 3.5vw;
+    }
+    .cardinfo span i{
+    
+        font-size: 5vw;
+    }
+    .cardinfo p{
+        font-size: 2.5vw;
+        width: 60vw;
+    }
+}
