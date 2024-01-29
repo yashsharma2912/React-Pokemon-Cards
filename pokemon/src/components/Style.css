@@ -8,11 +8,12 @@
     --primary : white;
     --secondary : orangered;
     --border1 : rgb(119, 118, 118);
-    --font1 : red ;
+    --font1 : rgb(29, 19, 19) ;
     --font2 : rgb(0, 0, 0);
 }
 /* Headings  */
 .sectionHead h1{
+    color: var(--font1);
     font-family: "Poppins", sans-serif;
     display: flex;
     font-size: 5vw;
@@ -211,11 +212,19 @@
 /* Projects Section Starts */ 
 
 .projectgrid{
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+    justify-content: center;
     display: grid;
+    row-gap: 2vw;
     column-gap: 8vw;
     grid-template-columns: repeat(auto-fill, 40vw);
 }
-
+@media (max-width : 700px) {
+    .projectgrid{
+        gap: 8vw;
+    }
+}
 /* Projects Section ends */ 
 
 /* Experience marquee section starts*/
@@ -368,7 +377,7 @@
      .left-baner{
         margin: 0 auto 0 5vw;
         position: relative;
-        top: 8vw;
+        top: 7vw;
        
      }
      .left-baner h1{
@@ -384,7 +393,7 @@
      }
      .sc{
         margin-top: 2vw;
-        font-size: 7vw;
+      
      }
      .banerImg{
         position: relative;
