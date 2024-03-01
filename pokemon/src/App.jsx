@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{ useRef } from 'react'
 import './app.css'
 import '../src/utils/mediaQuery.css'
 import Navbar from './components/navbar'; 
@@ -11,9 +11,11 @@ import Footer from './components/footer';
 
 
 const App = () => {
+  const mainDiv = useRef(null);
   return (
     <div>
-      <div className="container">
+      
+      <div className="container" ref={mainDiv}>
       <Navbar />
       <Baner/> 
 
@@ -30,7 +32,7 @@ const App = () => {
 
       <SectionHeading Head="SERVICES"/>
       <Marquee/>
-      
+      <SectionHeading Head="EDUCATION"/>
        <Footer/>
       </div>
     </div>

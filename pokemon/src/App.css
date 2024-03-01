@@ -1,3 +1,14 @@
 .container{
     overflow-x: hidden;
 }
+.menuScreen{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 99;
+    background-color: rgba(0, 0, 0, 0.737);
+}
