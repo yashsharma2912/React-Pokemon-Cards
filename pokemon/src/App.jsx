@@ -7,7 +7,8 @@ import Projects from './components/projects';
 import Marquee from './components/marquee1';
 import Skills from './components/skills';
 import SectionHeading from './components/sectionHeading';
-import Footer from './components/footer';
+// import Footer from './components/footer';
+import Education from './components/Education';
 
 
 const App = () => {
@@ -33,7 +34,8 @@ const App = () => {
       <SectionHeading Head="SERVICES"/>
       <Marquee/>
       <SectionHeading Head="EDUCATION"/>
-       <Footer/>
+      <Education/>
+       {/* <Footer/> */}
       </div>
     </div>
   )
