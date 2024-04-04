@@ -230,7 +230,10 @@
 /* Experience marquee section starts*/
 
 .mark{
-    margin-top: 2vmax;
+    background-color: aqua;
+    border-radius: 20px 20px 0 0;
+    height: 34vh;
+    margin-top: 1vmax;
     white-space: nowrap;
     overflow-x: auto;
     
@@ -242,18 +245,18 @@
    white-space: nowrap;
    display: inline-block;
    animation-name: moving;
-   animation-duration: 10s;
+   animation-duration: 15s;
    animation-timing-function: linear ;
    animation-iteration-count: infinite;
 }
  .mark h1{
-    font-size: 4vw;
+    font-size: 10vw;
     font-family: "Poppins", sans-serif;
     display: inline-block;
  }
  .dot{
-    width: 2vw;
-    height: 2vw;
+    width: 5vw;
+    height: 5vw;
     border-radius: 50%;
     background-color: var(--secondary);
     display: inline-block;

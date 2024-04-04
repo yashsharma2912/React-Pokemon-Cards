@@ -1,9 +1,12 @@
 import '../components/Style.css'
 import React from 'react'
+import {motion} from "framer-motion"
 
 const Marquee = () => {
   return (
-    <div className="mark">
+    <motion.div
+     
+    className="mark">
          <div className="con">
              <h1>Web Developement</h1>
              <div className="dot"></div>
@@ -34,9 +37,7 @@ const Marquee = () => {
              <h1>Graphic Designing</h1>
              <div className="dot"></div>
          </div>
-        
-       
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,5 +1,6 @@
 import React,{ useRef } from 'react'
 import './app.css'
+
 import '../src/utils/mediaQuery.css'
 import Navbar from './components/navbar'; 
 import Baner from './components/Baner';
@@ -9,9 +10,13 @@ import Skills from './components/skills';
 import SectionHeading from './components/sectionHeading';
 // import Footer from './components/footer';
 import Education from './components/Education';
+import LocomotiveScroll from 'locomotive-scroll';
 
 
 const App = () => {
+
+const locomotiveScroll = new LocomotiveScroll();
+
   const mainDiv = useRef(null);
   return (
     <div>
@@ -19,7 +24,7 @@ const App = () => {
       <div className="container" ref={mainDiv}>
       <Navbar />
       <Baner/> 
-
+      <Marquee/>
       <SectionHeading id="projectss" Head="PROJECTS"/>
       <Projects/>
      <hr />
@@ -32,7 +37,7 @@ const App = () => {
       <Skills  skillName="CSS" skillLevel="Expert"/>
 
       <SectionHeading Head="SERVICES"/>
-      <Marquee/>
+      
       <SectionHeading Head="SKILLS & EDUCATION"/>
       <Education/>
        {/* <Footer/> */}
