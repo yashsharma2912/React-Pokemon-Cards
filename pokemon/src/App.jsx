@@ -22,8 +22,8 @@ const App = () => {
 
       <SectionHeading id="projectss" Head="PROJECTS"/>
       <Projects/>
-     
-      <SectionHeading Head="SKILLS"  id="skills"/>
+     <hr />
+      <SectionHeading Head="SKILLS & EDUCATION"  id="skills"/>
       <Skills  skillName="React Js" skillLevel="Intermediate"/>
       <Skills  skillName="C++ and DSA" skillLevel="Beginner"/>
       <Skills  skillName="Tailwind CSS" skillLevel="Intermediate"/>
@@ -33,7 +33,7 @@ const App = () => {
 
       <SectionHeading Head="SERVICES"/>
       <Marquee/>
-      <SectionHeading Head="EDUCATION"/>
+      <SectionHeading Head="SKILLS & EDUCATION"/>
       <Education/>
        {/* <Footer/> */}
       </div>
