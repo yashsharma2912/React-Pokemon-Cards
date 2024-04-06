@@ -1,4 +1,5 @@
 
+
 *{
     padding: 0;
     margin: 0;
@@ -230,9 +231,9 @@
 /* Experience marquee section starts*/
 
 .mark{
-    background-color: aqua;
+    background-color: #ADE953;
     border-radius: 20px 20px 0 0;
-    height: 34vh;
+    height: 23vw;
     margin-top: 1vmax;
     white-space: nowrap;
     overflow-x: auto;
@@ -242,6 +243,7 @@
     display: none;
 }
 .con{
+    margin-top: 1vw;
    white-space: nowrap;
    display: inline-block;
    animation-name: moving;
@@ -250,7 +252,8 @@
    animation-iteration-count: infinite;
 }
  .mark h1{
-    font-size: 10vw;
+    color: #1C211A;
+    font-size: 12vw;
     font-family: "Poppins", sans-serif;
     display: inline-block;
  }

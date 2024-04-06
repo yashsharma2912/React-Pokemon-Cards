@@ -5,7 +5,7 @@ import {motion} from "framer-motion"
 const Marquee = () => {
   return (
     <motion.div
-     
+    data-scroll data-scroll-section data-scroll-speed="0.1"
     className="mark">
          <div className="con">
              <h1>Web Developement</h1>

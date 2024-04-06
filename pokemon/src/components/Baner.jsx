@@ -6,7 +6,7 @@ const Baner = () => {
  
   return (
     <>
-     <div className="baner flex">
+     <div data-scroll data-scroll-section data-scroll-speed="-0.3" className="baner flex">
          <div className="left-baner">
             <h1>I Am a <span className='titleTag'>Web Developer</span></h1>
             <p>
