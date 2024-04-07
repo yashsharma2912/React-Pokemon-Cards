@@ -1,13 +1,18 @@
 import React from 'react'
 import '../components/style.css'
 import 'remixicon/fonts/remixicon.css'
+import { motion } from 'framer-motion'
 
 const Baner = () => {
  
   return (
     <>
      <div data-scroll data-scroll-section data-scroll-speed="-0.3" className="baner flex">
-         <div className="left-baner">
+         <motion.div 
+           initial={{ opacity: 0, scale: 0.5 }}
+           animate={{ opacity: 1, scale: 1 }}
+           transition={{ duration: 1 }}
+         className="left-baner">
             <h1>I Am a <span className='titleTag'>Web Developer</span></h1>
             <p>
             Committed to a recent BBA graduate 
@@ -24,12 +29,16 @@ const Baner = () => {
              <a target='_blank' href="https://twitter.com/yashsha78513053"><i className="ri-twitter-x-fill twitter sc"></i></a>
              <a target='_blank' href="https://twitter.com/yashsha78513053"><i className="ri-medium-fill sc twitter"></i></a>
              </div>
-         </div>
+         </motion.div>
          <div className="right-baner">
                    {/* <div className="circle1">
 
                    </div> */}
-            <img className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
+            < motion.img 
+            initial={{ opacity: 0, scale: 0.5 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1 }}
+            className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
          </div>
      </div>
          {/* <div className="overlay">
