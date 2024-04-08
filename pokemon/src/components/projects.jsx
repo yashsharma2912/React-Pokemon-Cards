@@ -1,11 +1,12 @@
 import React from 'react'
-// import Projectcard from './projcomp/card'
+import ProjCard from './projectComp/ProjCard'
 
 const Projects = () => {
-  const text1 = "Created using HTML CSS and JavaScript. For getting real time news here i have used newsapi.org it has included searching and paging feature, It is a dynamic web project and fully responsive"
-  return (
-   <div>
-      projects
+   return (
+   <div className='Project'>
+       <ProjCard/>
+       <ProjCard/>
+       <ProjCard/>
    </div>
   )
 }

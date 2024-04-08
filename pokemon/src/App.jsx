@@ -20,7 +20,6 @@ const locomotiveScroll = new LocomotiveScroll();
   const mainDiv = useRef(null);
   return (
     <div>
-      
       <div className="container" ref={mainDiv}>
       <Navbar />
       <Baner/> 

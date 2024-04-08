@@ -14,7 +14,7 @@ const Navbar = () => {
         <div className="navItems bg-red-700">
          
            <ul className=''>
-            <li className='list'><h4 className='navEle'><a href="#projects">Projects</a></h4></li>
+            <li className='list'><h4 className='navEle'><a href="#abc">Projects</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#skills">Skills</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#">Education</a></h4></li>
             <li className='list'><h4 className='navEle'><a href="#">Contact</a></h4></li>
