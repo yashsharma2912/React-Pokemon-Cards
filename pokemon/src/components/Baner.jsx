@@ -2,6 +2,7 @@ import React from 'react'
 import '../components/style.css'
 import 'remixicon/fonts/remixicon.css'
 import { motion } from 'framer-motion'
+import yash from "../../public/yash.png"
 
 const Baner = () => {
  
@@ -38,7 +39,7 @@ const Baner = () => {
             initial={{ opacity: 0, scale: 0.5 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1 }}
-            className='banerImg' src="../../src/assets/images/Baner-img.png" alt="yash image"  width='500px'/>
+            className='banerImg' src={yash} alt="yash image"  width='500px'/>
          </div>
      </div>
          {/* <div className="overlay">

@@ -1,9 +1,13 @@
 
 
 *{
+   
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
 }
 :root{
     --primary : white;
@@ -14,7 +18,7 @@
 }
 /* Headings  */
 .sectionHead h1{
-    color: var(--font1);
+    color:#2c2b2b;
     font-family: "Poppins", sans-serif;
     display: flex;
     font-size: 5vw;
@@ -40,11 +44,13 @@
     padding: 1vw 2vw;
     flex-wrap: wrap;
     background-color: var(--primary);
-
+    overflow: hidden;
     /* border-bottom: 1px solid var(--font2); */
 
 }
 .navbar h1{
+   
+    position: relative;
     margin-left: 2vw;
     font-size: 5vmin;
     line-height: 1.2;
@@ -100,21 +106,111 @@
 .resume:hover a{
     color: var(--primary);
 }
-.menu{
-    font-size: 3vw;
-    color: var(--font2);
-    padding: 3vw 8vw;
-    border: 1.5px solid var(--border1) ;
-    border-radius: 25px;
+.menu-btn {
+    z-index: 9999;
+    position: relative;
     display: none;
+    font-size: 6vw;
+    cursor: pointer;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+.closebtn{
+    position: sticky;
+    z-index: 999;
+    color: white;
+    font-size: 10vw;
+}
+.menu{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: -280vw;
+    width: 100vw;
+    height: 230vh;
+    background-color: #11140ea3;
+    transition: all ease 5s;
+    
+}
+
+.menuOpenbox{
+    position: sticky;
+    top: 24vw;
+    z-index: 999;
+    margin-top: 34vw;
+}
+.activeMenu{
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 230vh;
+    background-color: #000000d2;
+    backdrop-filter: blur(25px);
+}
+
+.close {
+    font-size: 8vw;
+    color: white;
+    cursor: pointer;
+}
+
+.m-items li {
+    text-decoration: none;
+    color: white;
+    font-size: 7vw;
+    list-style: none;
+    text-align: center;
+    cursor: pointer;
     font-family: "Poppins", sans-serif;
+}
+.openLinks{
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+}
+.link{
+    text-wrap: nowrap;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 8vw;
+    text-align: center;
+    font-weight: 550;
+}
+.link:hover{
+    color: orangered;
+}
+.openbtn{
+    margin-top: 12vw;
+    display: flex;
+    gap: 4vw;
+    justify-content: center;
+}
+.openbtn button{
+    padding: 2vw 6vw;
+    background: none;
+    border: 2px solid white;
+    border-radius: 24px;
+    outline: none;
+}
+.openbtn a:hover{
+    color: orangered;
+}
+.openbtn a {
+    text-decoration: none;
+    font-size: 4vw;
+    color: white;
 }
 /* Navbar ends */ 
 
 /* hero section started */
 .baner{
     display: flex;
-    width: 100%;
+    position: relative;
+    width: 100vw;
     align-items: flex-end;
     justify-content: space-between;
     height: 100vh;
@@ -176,20 +272,7 @@
     animation-timing-function: linear;
     animation-iteration-count: infinite;
 }
-.circle2{
-    position: absolute;
-    margin-top: 9rem;
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    filter: blur(2.5rem);
-    background-color: peachpuff;
-    animation-name: anime ;
-    animation-duration: 3s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
-    animation-direction:alternate ;
-}
+
 
 @keyframes anime {
     from{
@@ -212,29 +295,75 @@
 }
 /* Projects Section Starts */ 
 .Project{
-    padding:3vw 0 5vw 0vw;
+    width: 100%;
+    padding:8vw 0 8vw 0vw;
+   
     display: flex;
-    gap: 3vw;
+    flex-wrap: wrap;
+    gap: 3.5vw;
     justify-content: center;
     align-items: center;
+    font-family: "Poppins", sans-serif;
     
 }
-.thumb{
+.Projcard{
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;   
+}
+.imgbox{
+    position: relative;
     display: flex;
     justify-content: center;
-    margin-top: 1vw;
-}
-.thumb img{
+    align-items: center;
     width: 23vw;
-    height: 13vw;
-    border-radius: 15px;
+    height: 12vw;
+    border:1px solid #1C211A;
+    border-radius: 5px;
+    overflow: hidden;
 }
-.Projcard{
-    width: 25vw;
-    height: 25vw;
+.po{
+    position: absolute;
+    width: 23vw;
+    height: 12vw;
+    background-color: #1c211aba;
+    z-index: 998;
+    transition: all ease 1s;
+}
+.imgbox h3{
+    font-size: 5vw;
+    position: absolute;
+    cursor: pointer;
+    color: #ADE953;
+    z-index: 999;
+}
+.imgbox img{
+    width: 23vw;
+    height: 12vw;
+    object-fit: cover;
+    cursor: pointer;
+    z-index: 997;
+}
+
+.cardDesc li{
+   font-size: 0.9vw;
+   margin-left: 0.5vw;
+}
+.botcard{
+    display: flex;
+    gap: 1vw;
+}
+.botcard span{
+    font-size: 0.8vw;
+    border: 1px solid black;
     border-radius: 25px;
-   
-    background-color:#242823;
+    padding: 0.3vw 0.7vw;
+    cursor: pointer;
+}
+.botcard span:hover{
+    background-color: #1C211A;
+    color: white;
+    transition: all ease 0.7s;
 }
 
 /* Projects Section ends */ 
@@ -276,7 +405,15 @@
     display: inline-block;
     margin: 0 2vw;
  }
-
+@media (max-width : 700px) {
+    .mark{
+        height: 15vw;
+        border-radius: 10px 10px 0 0;
+    }
+    .mark h1{
+        font-size: 9vw;
+    }
+}
  @keyframes moving {
     from{
         transform: translateX(0%);
@@ -345,18 +482,107 @@
 /*----------------------------------------
  Contact section starts 
  ----------------------------------------*/
+.contact{
+    padding: 3vw 10vw;
+    display: flex;
+    height: 150vh;
+    background-color: #ADE953;
+    border-radius: 2vw 2vw 0 0;
+    flex-direction: column;
+    /* align-items: center; */
+    font-family: "Poppins", sans-serif;
+}
+.contact h1{
+    margin-top: 0.4vw;
+    font-size: 6vw;
+    color: #2c2b2b;
+    font-weight: 900;
+    text-wrap: nowrap;
 
+}
+.cnbox{
+    display: flex;
+    justify-content: center;
+    gap: 10VW;
+}
 
+.cn{
+    margin: 0 auto;
+}
+.contact a{
+    position: relative;
+    top: 1vw;
+    text-decoration: none;
+    color: black;
+    border: 1px solid black;
+    font-size: 1.8vw;
+    border-radius: 22px;
+    padding: 0.5vw 2vw;
+    margin-left: 2vw;
+    max-width: 24vw;
+}
+.contact a:hover{
+    background-color: #1C211A;
+    color: white;
+}
+ .ready{
+    /* display: flex; */
+    margin-top: 2vw;
+    flex-direction: column;
+   
+    
+ }
+.cnForm{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    right: 4vw;
+}
+.cnForm input,textarea,button{
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 30vw;
+    padding: 1vw 2vw;
+
+}
 /*----------------------------------------
  Contacts section ends
  ----------------------------------------*/
 
 
-
 /*----------------------------------------
  Footer section starts 
  ----------------------------------------*/
-
+.hg{
+    height: 10vh;
+    width: 10vw;
+}
+::-webkit-scrollbar-thumb{
+    display: none;
+}
+ .botF{
+    /* border-radius: 4vw 4vw 0 0; */
+    background-color: #f6f0f0;
+    display: flex;
+    height: 35vw;
+    z-index: 99;
+    justify-content: space-between;
+    padding: 0vw 4vw;
+    align-items: center;
+    font-family: "poppins", sans-serif;
+    a{
+        color:#1C211A;
+    }
+ }
+ .botF h3{
+    color: #1C211A;
+    line-height: 110%;
+ }
+ .botF p,h4{
+     font-size: 1.4vw;
+ }
 
 /*----------------------------------------
  Footer section ends
@@ -383,7 +609,7 @@
     .resume {
         display: none;
     }
-    .menu{
+    .menu-btn{
         display: block;
         margin-right: 4vw;
     }
