@@ -13,6 +13,7 @@ const ProjCard = ({Props}) => {
     onHoverEnd={e => {}} className='Projcard'>
       
           <li>Fiverr Clone</li>
+          
           <div className="imgbox" onMouseEnter={() => setHover(true) } onMouseLeave={() => setHover(false)}>
            { hover && ( <motion.h3  initial={{ scale: 0 }}
               animate={{ rotate: 360, scale: 0.8 }}

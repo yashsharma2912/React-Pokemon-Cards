@@ -29,10 +29,10 @@ const Navbar = () => {
             <li className='list'><h4 className='navEle'><a href="#">Contact</a></h4></li>
            </ul>
         </div>
-        <div className="resume font-bold underline">
+        {/* <div className="resume font-bold underline">
            <h4><a target='_blank' href="https://drive.google.com/file/d/11C0iGhvOV7GyBIX0ivCbM40DTQP3MNbd/view?usp=drive_link">Resume</a></h4>
 
-        </div>
+        </div> */}
        
           <div className="menu-btn">
              <span onClick={()=>(toggle ? setToggle(false) : setToggle(true))}> {toggle ? <CiMenuFries /> : <IoCloseOutline className='closebtn'/> }</span>

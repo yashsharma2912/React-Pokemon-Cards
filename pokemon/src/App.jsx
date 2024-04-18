@@ -31,22 +31,18 @@ const locomotiveScroll = new LocomotiveScroll();
       <BrowserRouter>
     <div>
       <div className="container" ref={mainDiv}>
-      <Navbar />
+      {/* <Navbar /> */}
+      <Marquee/>
       <Baner/> 
       <Marquee/>
       <SectionHeading id="projectss" Head="FEATURED PROJECTS"/>
       <hr />
       <Projects/>
-     <hr />
+     
+     
       <SectionHeading Head="SKILLS & EDUCATION"  id="skills"/>
-      {/* <Skills  skillName="React Js" skillLevel="Intermediate"/>
-      <Skills  skillName="C++ and DSA" skillLevel="Beginner"/>
-      <Skills  skillName="Tailwind CSS" skillLevel="Intermediate"/>
-      <Skills  skillName="JavaScript" skillLevel="Beginner"/>
-      <Skills  skillName="HTML5" skillLevel="Expert"/>
-      <Skills  skillName="CSS" skillLevel="Expert"/> 
-       */}
       <hr />
+       <Skills/>
         <Contact/>
        
        <Footer/>

@@ -1,7 +1,7 @@
 
 
 *{
-   
+   font-family: "poppins", sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -42,6 +42,7 @@ body{
     align-items: center;
     justify-content: space-between;
     padding: 1vw 2vw;
+    overflow: hidden;
     flex-wrap: wrap;
     background-color: var(--primary);
     overflow: hidden;
@@ -89,6 +90,7 @@ body{
     text-decoration: none ;
     margin-right: 2vw;
     color: var(--font2);
+    max-height: 1vw;
     padding: 1vw 2vw;
     border: 1.5px solid var(--border1) ;
     border-radius: 25px;
@@ -294,10 +296,14 @@ body{
     bottom: 1rem;
 }
 /* Projects Section Starts */ 
+.projcont h2{
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
 .Project{
     width: 100%;
-    padding:8vw 0 8vw 0vw;
-   
+    padding: 6vw 0 4vw 0vw;
     display: flex;
     flex-wrap: wrap;
     gap: 3.5vw;
@@ -427,49 +433,81 @@ body{
 /*----------------------------------------------------------*/ 
 /* SKills Sections Starts */
 /*----------------------------------------------------------*/ 
+
 .skills{
-    /* border: 1px solid red; */
-    
+    position: relative;
+    bottom: 12vw;
+    height: 70vw;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5vw;
+    /* background-color: #eadede; */
+}
+.set{
+    text-align: center;
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+.skillBox{
+    width: 40vw;
+    max-height: 20vw;
+    flex-wrap: wrap;
+    gap: 1vw;
+    display: flex;
+   
+}
+.skillcard{
+    cursor: pointer;
+    width: 9vw;
+    height: 9vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1.2vw;
+    border: 2px solid purple;
+    background-color: #f7f5f5;
+    backdrop-filter: blur(15px);
+}
+.edu{
     display: flex;
     flex-direction: column;
-    font-family: "Poppins", sans-serif;
-} 
-.skills h1{
-    text-align: center;
-    font-size: 3.5vw;
+    gap: 2vw;
 }
-.skill{
+
+.icon{
+    font-size: 5vw;
+    color: green;
+}
+.edTitle{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.edDesc{
+    margin-top: 0.2vw;
     display: flex;
-    align-items: center;
+    font-size: 1.2vw;
     justify-content: space-between;
-    overflow: hidden;
-    position: relative;
-    padding: 1vw 4vw;
-    border-bottom: 1px solid var(--border1);
-    cursor: pointer;
 }
-.over{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: orange;
-  left: 0;
-  top: -100%;
-  z-index: -5;
-  transition: all ease 0.5s;
+.edubox{
+    padding: 1.5vw 2vw;
+    width: 40vw;
+    height:fit-content;
+    display: flex;
+    text-wrap: nowrap;
+    border:2px solid #ADE953;
+    border-radius: 15px;
+    background-color: #eaeee685;
 }
-.skill h2,h3{
-    color: var(--font2);
-    font-size: 3.5vw;
-}
-.skill:hover .over{
-    top: 0;  
-}
-.skill:hover h2,h3{
-    color: var(--primary);
-}
-.skill:hover h3{
-    color: var(--font2);
+
+.edubox ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4vw;
+    margin-top: 0.4vw;
+    padding-left: 2vw;
+
 }
 /* SKills Sections Ends */ 
 
@@ -566,10 +604,10 @@ body{
     /* border-radius: 4vw 4vw 0 0; */
     background-color: #f6f0f0;
     display: flex;
-    height: 35vw;
-    z-index: 99;
+    height: 45vw;
     justify-content: space-between;
     padding: 0vw 4vw;
+    border-radius: 2vw 2vw 0 0;
     align-items: center;
     font-family: "poppins", sans-serif;
     a{
@@ -577,12 +615,16 @@ body{
     }
  }
  .botF h3{
+    margin-top: 15vw;
     color: #1C211A;
     line-height: 110%;
+    font-size: 3vw;
  }
  .botF p,h4{
+    margin-top: 15vw;
      font-size: 1.4vw;
  }
+
 
 /*----------------------------------------
  Footer section ends
