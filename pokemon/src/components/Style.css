@@ -27,185 +27,8 @@ body{
     margin-top: 2vw;
 }
 /*  Navbar satrted  */ 
-.fullscreen{
-    height: 100vh;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.215);
-    position: fixed;
-    top: -100%;
-}
-.navbar{
-    display: flex;
-    /* position: sticky; */
-    top: 0;
-    z-index: 55;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1vw 2vw;
-    overflow: hidden;
-    flex-wrap: wrap;
-    background-color: var(--primary);
-    overflow: hidden;
-    /* border-bottom: 1px solid var(--font2); */
 
-}
-.navbar h1{
-   
-    position: relative;
-    margin-left: 2vw;
-    font-size: 5vmin;
-    line-height: 1.2;
-    font-family: "Poppins", sans-serif;
-}
-.logo{
-    position: relative;
-    right: 2rem;
-    z-index: -1;
-}
-.navItems ul{
-    position: relative;
-    display: flex;
-    list-style: none;
-    gap: 1.5vw;
-    margin-right: 2vw;
-}
-.navItems a{
-    position: relative;
-    z-index: 9;
-    text-decoration: none ;
-    color: var(--font2);
-    padding: 1vw 2vw;
-    border: 1.5px solid var(--border1) ;
-    border-radius: 25px;
-    font-family: "Poppins", sans-serif;
-}
 
-.navItems a:hover{
-    background-color: var(--font2);
-    color: var(--primary);
-    transition: all ease-in-out 0.3s;
-}
-
-.resume {
-    text-decoration: none ;
-    margin-right: 2vw;
-    color: var(--font2);
-    max-height: 1vw;
-    padding: 1vw 2vw;
-    border: 1.5px solid var(--border1) ;
-    border-radius: 25px;
-    font-family: "Poppins", sans-serif;
-}
-.resume a{
-    text-decoration: none;
-    color: var(--font2);
-    transition: all ease-in-out 0.3s;
-}
-.resume:hover{
-    background-color: var(--font2);
-    
-}
-.resume:hover a{
-    color: var(--primary);
-}
-.menu-btn {
-    z-index: 9999;
-    position: relative;
-    display: none;
-    font-size: 6vw;
-    cursor: pointer;
-    overflow: hidden;
-    text-decoration: none;
-}
-
-.closebtn{
-    position: sticky;
-    z-index: 999;
-    color: white;
-    font-size: 10vw;
-}
-.menu{
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    top: -280vw;
-    width: 100vw;
-    height: 230vh;
-    background-color: #11140ea3;
-    transition: all ease 5s;
-    
-}
-
-.menuOpenbox{
-    position: sticky;
-    top: 24vw;
-    z-index: 999;
-    margin-top: 34vw;
-}
-.activeMenu{
-    position: absolute;
-    z-index: 999;
-    left: 0;
-    top: 0;
-    width: 100vw;
-    height: 230vh;
-    background-color: #000000d2;
-    backdrop-filter: blur(25px);
-}
-
-.close {
-    font-size: 8vw;
-    color: white;
-    cursor: pointer;
-}
-
-.m-items li {
-    text-decoration: none;
-    color: white;
-    font-size: 7vw;
-    list-style: none;
-    text-align: center;
-    cursor: pointer;
-    font-family: "Poppins", sans-serif;
-}
-.openLinks{
-    display: flex;
-    flex-direction: column;
-    gap: 2vw;
-}
-.link{
-    text-wrap: nowrap;
-    font-family: "Poppins", sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 8vw;
-    text-align: center;
-    font-weight: 550;
-}
-.link:hover{
-    color: orangered;
-}
-.openbtn{
-    margin-top: 12vw;
-    display: flex;
-    gap: 4vw;
-    justify-content: center;
-}
-.openbtn button{
-    padding: 2vw 6vw;
-    background: none;
-    border: 2px solid white;
-    border-radius: 24px;
-    outline: none;
-}
-.openbtn a:hover{
-    color: orangered;
-}
-.openbtn a {
-    text-decoration: none;
-    font-size: 4vw;
-    color: white;
-}
 /* Navbar ends */ 
 
 /* hero section started */
@@ -436,8 +259,8 @@ body{
 
 .skills{
     position: relative;
-    bottom: 12vw;
-    height: 70vw;
+    bottom: 20vw;
+    height: 90vw;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -452,6 +275,8 @@ body{
 }
 .skillBox{
     width: 40vw;
+    position: relative;
+    bottom: 4vw;
     max-height: 20vw;
     flex-wrap: wrap;
     gap: 1vw;
@@ -634,70 +459,7 @@ body{
  /*----------------------------------------
  Media Queries starts 
  ----------------------------------------*/
-  @media (max-width:700px) {
-    .navbar{
-        margin-top: 4vw;
-        width: 100vw;
-    }
-    .navbar h1{
-        margin-left: 5vw;
-        font-size: 5vmin;
-        line-height: 1.2;
-        font-family: "Poppins", sans-serif;
-    }
-    .navItems ul{
-        display: none;
-    }
-    .resume {
-        display: none;
-    }
-    .menu-btn{
-        display: block;
-        margin-right: 4vw;
-    }
-    
-  }
-
-  @media (max-width : 700px) {
-     .baner{
-        flex-direction: column;
-        justify-content: center;
-    
-        height: 110vw;
-     }
-     .left-baner{
-        margin: 0 auto 0 5vw;
-        position: relative;
-        top: 7vw;
-       
-     }
-     .left-baner h1{
-        font-size: 7vw;
-        text-wrap: nowrap;
-     }
-     .titleTag{
-        color: var(--secondary);
-     }
-     .left-baner p{
-        width: 80vw;
-        font-size: 3vw;
-     }
-     .sc{
-        margin-top: 2vw;
-      
-     }
-     .banerImg{
-        position: relative;
-        width: 55vw;
-     }
-     .wp-btn{
-        font-size: 2.5vw;
-        padding: 3vw 5vw;
-        text-wrap: nowrap;
-        width: 42vw;
-     }
-  }
-
+ 
 /*----------------------------------------
  Media Queries ends
  ----------------------------------------*/

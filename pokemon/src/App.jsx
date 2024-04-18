@@ -31,8 +31,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <BrowserRouter>
     <div>
       <div className="container" ref={mainDiv}>
-      {/* <Navbar /> */}
-      <Marquee/>
+      <Navbar />
       <Baner/> 
       <Marquee/>
       <SectionHeading id="projectss" Head="FEATURED PROJECTS"/>
