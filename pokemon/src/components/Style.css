@@ -27,8 +27,38 @@ body{
     margin-top: 2vw;
 }
 /*  Navbar satrted  */ 
-
-
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2vw 8vw;
+}
+.navbar h1{
+    font-size: 3vw;
+    color: #2c2b2b;
+    line-height: 3.5vw;
+}
+.navbar ul{
+    display: flex;
+    gap: 2vw;
+}
+.navbar .link{
+    padding:0.7vw 1.5vw;
+    text-decoration: none;
+    color: #2c2b2b;
+    font-size: 1.2vw;
+    font-weight: 500;
+    border:1px solid #2c2b2b;
+    border-radius: 25px;
+}
+.navbar .link:hover{
+    background-color: #1C211A;
+    color: white;
+    transition: all ease 0.8s;
+}
+.menu-btn{
+    display: none;
+}
 /* Navbar ends */ 
 
 /* hero section started */
@@ -163,7 +193,7 @@ body{
     font-size: 5vw;
     position: absolute;
     cursor: pointer;
-    color: #ADE953;
+    /* color: #ADE953; */
     z-index: 999;
 }
 .imgbox img{
@@ -260,7 +290,7 @@ body{
 .skills{
     position: relative;
     bottom: 20vw;
-    height: 90vw;
+    height: 80vw;
     width: 100vw;
     display: flex;
     justify-content: center;
@@ -346,7 +376,7 @@ body{
  Contact section starts 
  ----------------------------------------*/
 .contact{
-    padding: 3vw 10vw;
+    padding: 1vw 10vw;
     display: flex;
     height: 150vh;
     background-color: #ADE953;
@@ -459,7 +489,15 @@ body{
  /*----------------------------------------
  Media Queries starts 
  ----------------------------------------*/
- 
+ @media (max-width:700px) {
+       .menu-btn{
+        font-size: 3.5vw;
+        display: block;
+       }
+       .navbar ul{
+        display: none;
+       }
+ }
 /*----------------------------------------
  Media Queries ends
  ----------------------------------------*/

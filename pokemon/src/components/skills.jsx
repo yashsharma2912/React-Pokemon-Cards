@@ -21,7 +21,8 @@ import ed1 from "../assets/ed1.jpeg"
 
 const Skills = (props) => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="0.5s">
+    <div data-scroll data-scroll-section data-scroll-speed="0.5s" >
+      
       <h3 className='set'>Skills & Education: Equipping myself with essential expertise and academic prowess to pave <br />the path toward success and continuous growth.</h3>
     <div  className='skills'>
       

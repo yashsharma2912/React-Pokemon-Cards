@@ -7,7 +7,7 @@ const Footer = () => {
        <div className="mainFooter">
            <div className="botF">
                <h3>Yash <br /> Sharma</h3> 
-               <p>Made with ❤️ by <span><a href="">Yash Sharma</a></span></p>
+               <p>Made with ❤️ by <span><a href="https://github.com/yashsharma2912" target='_blank'>Yash Sharma</a></span></p>
                <h4><span></span>Nagpur</h4>
            </div>   
            {/* <div className="botIcon">

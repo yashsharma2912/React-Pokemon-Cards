@@ -39,7 +39,7 @@ const locomotiveScroll = new LocomotiveScroll();
       <Projects/>
      
      
-      <SectionHeading Head="SKILLS & EDUCATION"  id="skills"/>
+      <SectionHeading id="edun" Head="SKILLS & EDUCATION" />
       <hr />
        <Skills/>
         <Contact/>

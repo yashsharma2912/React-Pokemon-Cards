@@ -4,7 +4,7 @@ import "../components/style.css"
 
 const Contact = () => {
   return (
-    <div data-scroll data-scroll-section data-scroll-speed="-0.3s" className='contact' id='priya'>
+    <div data-scroll data-scroll-section data-scroll-speed="-0.5s" className='contact' id='priya'>
        <h1 className='cn'>CONTACT</h1>
         <div className='cnbox'>
         <div className="ready">
